@@ -68,10 +68,16 @@
     background-color: rgb(8, 0, 0);
   }*/
   .carousel-indicators li {
-    width: 20px;
+   /* width: 20px;
     height: 20px;
     border-radius: 100%;
-    background-color: black;
+    background-color: black;*/
+    border: 2px solid #000080;
+    background-color: #FFFFFF;
+    height: 100px;
+    border-radius:50%;
+    width: 20px;
+    height: 20px;
   }
   
   .carousel-indicators li::before {
@@ -95,15 +101,119 @@
   }
   
   .carousel-indicators .active {
-    background-color: rgb(33, 30, 167);
+    background-color: #000080;
   }
   /* Rounded*/
   .rounded {
     border-radius: 0.75rem !important;
-    border-color: red;
     border-width: 2px;
   }
   .symbol {
-      color: #262F7D;
-      font-weight: 900;
+      /*color: #262F7D;*/
+      color: #40ADF4;
+      font-weight: 700;
   }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    /*color: #fff;
+    background-color: white;
+    background-color: #262F7D;*/
+    
+        /*display: block;
+        padding: .5em;
+        background: #000080;
+        border: 2px solid #000080;
+        border-bottom-color: #000080;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+       
+        font-family: "Posterama Text W15 SemiBold" !important;*/
+        background: #fff;
+    color: #000080;
+    border-bottom-color: #000080;
+    
+}
+.nav-pills .nav-link {
+    display: block;
+        padding: .5em;
+        background: #000080;
+        border: 2px solid #000080;
+        border-bottom-color: #000080;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+       
+        font-family: "Posterama Text W15 SemiBold" !important;
+}
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem 0;
+}
+html body {
+    height: 100%;
+   /* background-color: #F4F5FA;*/
+    direction: ltr;
+}
+
+outer-shadow {
+overflow: hidden;
+padding: 0px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.page-heading {
+    font-family: 'Bree Serif', serif;
+}
+.photo-heading {
+    font-family: 'Rubik', sans-serif;
+}
+.catgory-heading {
+   /* font-family: 'Lato', sans-serif;*/
+   font-family: 'Raleway', sans-serif;
+}
+.container-fluid {
+    width: 98%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+/* {
+    display: block;
+    padding: .5em;
+    background: #000080;
+    border: 2px solid #000080;
+    border-bottom-color: #000080;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Posterama Text W15 SemiBold" !important;
+}*/
+  /*
+  <div class="col-md-2 col-sm-6 col-xs-12">
+                                                    <figure class="effect-lily" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" style="
+                                                    position: relative;
+                                                    overflow: hidden;
+                                                    text-align: center;
+                                                    cursor: pointer;
+                                                    ">
+                                                    <a href="assets/images/shardul.png"  class="thumbnail" data-size="480x360"  alt="1 slide">
+                                                            <img loading="lazy" class=" img-fluid rounded" style="height: 150px;width: 150px;" src="assets/images/shardul.png" >
+                                                    </a>
+                                                        <figcaption class="text-center">
+                                                            <span style="color:rgba(0, 0, 0, 0.781)">
+                                                            <div>
+                                                            <h5 style="color:black"><b>Shardul Sayankal</b>
+                                                            </h5>
+                                                            <h6>PVG COET,Pune</h6>
+                                                            </div>
+                                                            </span>
+                                                        </figcaption>
+                                                    
+                                                    </figure>
+                                                </div>
+  */
