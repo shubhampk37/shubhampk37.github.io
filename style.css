@@ -111,23 +111,14 @@
   .symbol {
       /*color: #262F7D;*/
       color: #40ADF4;
-      font-weight: 700;
+      font-weight: 900;
+      font-family: "Times New Roman",Georgia,Quicksand;
+      font-style: italic;
+      /*font-family: Georgia;*/
+      
   }
   .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    /*color: #fff;
-    background-color: white;
-    background-color: #262F7D;*/
-    
-        /*display: block;
-        padding: .5em;
-        background: #000080;
-        border: 2px solid #000080;
-        border-bottom-color: #000080;
-        text-align: center;
-        color: #fff;
-        text-decoration: none;
-       
-        font-family: "Posterama Text W15 SemiBold" !important;*/
+  
         background: #fff;
     color: #000080;
     border-bottom-color: #000080;
@@ -138,21 +129,24 @@
         padding: .5em;
         background: #000080;
         border: 2px solid #000080;
+        
         border-bottom-color: #000080;
         text-align: center;
         color: #fff;
         text-decoration: none;
-       
-        font-family: "Posterama Text W15 SemiBold" !important;
+        font-weight: 900;
+        font-family: Georgia !important;
 }
+.nav-pills .nav-link:hover {
+    border: 2px solid #000080;
+    background: #fff;
+      color: #000080;
+      border-bottom-color: #000080;
+  }
 .nav-pills .nav-link {
     border-radius: 0;
 }
-.card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem 0;
-}
+
 html body {
     height: 100%;
    /* background-color: #F4F5FA;*/
@@ -165,10 +159,21 @@ padding: 0px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .page-heading {
-    font-family: 'Bree Serif', serif;
+    /*font-family: 'Bree Serif', serif;*/
+    font-family: 'Quicksand'; 
+
+    font-size: 40px ;
+    font-weight: bold;
 }
 .photo-heading {
-    font-family: 'Rubik', sans-serif;
+    /*font-family: 'Rubik', sans-serif;
+    text-align:center;*/
+    font-family: 'Georgia',serif;
+    font-weight: bold;
+}
+.titlewrapper{
+  width: 100%;
+  text-align:center;
 }
 .catgory-heading {
    /* font-family: 'Lato', sans-serif;*/
@@ -180,7 +185,36 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-left: 15px;
     margin-right: 10px;
     margin-left: 10px;
+    /*margin:10px;*/
+    
   }
+  .adjust-width {
+    /*width: 98%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 30px;
+    margin-left: 30px;*/
+    padding: 100px;
+  }
+.card {
+  border-radius: 0;
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem 0;
+}
+/*.col-md-2{
+  margin: 0px !important;
+  padding: 0px !important;
+}*/
+/*For spacing of photos*/
+.panel-body{
+  padding-top: 28px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 /* {
     display: block;
     padding: .5em;
@@ -194,6 +228,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: "Posterama Text W15 SemiBold" !important;
 }*/
   /*
+  <img class="lazy img-fluid"  style="height: 150px;width: 150px;" data-src="assets/images/shubham.png" src="assets/placeholder/placeholder1.png">
   <div class="col-md-2 col-sm-6 col-xs-12">
                                                     <figure class="effect-lily" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" style="
                                                     position: relative;
