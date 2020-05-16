@@ -1,0 +1,382 @@
+.customDiv{
+    background-color: white;
+}
+
+  
+  
+  /*Carousel Indicator Changes*/
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+  }
+  
+  /*.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgb(8, 0, 0);
+  }*/
+  .carousel-indicators li {
+   /* width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;*/
+    border: 2px solid #000080;
+    background-color: #FFFFFF;
+    height: 100px;
+    border-radius:50%;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .carousel-indicators li::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+  }
+  
+  .carousel-indicators li::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+  }
+  
+  .carousel-indicators .active {
+    background-color: #000080;
+  }
+  /* Rounded*/
+  .rounded {
+    border-radius: 0.75rem !important;
+    border-width: 2px;
+  }
+  
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  
+        background: #fff;
+    color: #000080;
+    border-bottom-color: #000080;
+    
+}
+.nav-pills .nav-link {
+    display: block;
+        padding: .5em;
+        background: #000080;
+        border: 2px solid #000080;
+        
+        border-bottom-color: #000080;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 900;
+        font-family: Georgia !important;
+}
+.nav-pills .nav-link:hover {
+    border: 2px solid #000080;
+    background: #fff;
+      color: #000080;
+      border-bottom-color: #000080;
+  }
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+html body {
+    height: 100%;
+   /* background-color: #F4F5FA;*/
+    direction: ltr;
+}
+
+outer-shadow {
+overflow: hidden;
+padding: 0px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.adjust-width {
+    /*width: 98%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 30px;
+    margin-left: 30px;*/
+    padding: 100px;
+}
+
+
+/*For spacing of photos*/
+/*.panel-body{
+  padding-top: 28px;
+  padding-left: 100px;
+  padding-right: 100px;
+}*/
+/*Card integration changes with higher selectivity*/
+#FacultyCard .card {
+  border-radius: 0;
+  margin: 0;
+  max-width: 100%;
+  border: 1px solid rgba(0,0,0,.125);
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0;
+
+}
+/*Card integration in environment this is from ongoing*/
+
+#FacultyCard .card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0,0,0,.03);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  word-wrap: break-word;
+  height:auto;
+}
+/*wrapping overflowing text*/
+#FacultyCard .tab-content button .cover{
+  white-space: normal !important;
+  word-wrap: break-word !important;
+}
+/*panel-body*/
+/*.panel-body{
+  padding: 2.2rem;
+}*/
+/*figure tag class*/
+.figureClass{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+/*image style*/
+.image-style{
+  height: 150px;
+  width: 150px;
+}
+
+/*textual classes*/
+.page-heading {
+  /*font-family: 'Bree Serif', serif;*/
+  font-family: 'Quicksand'; 
+
+  font-size: 4vw ;
+  font-weight: bold;
+}
+.figureClass figcaption .photo-heading h6{
+  /*font-family: 'Rubik', sans-serif;
+  text-align:center;*/
+  font-family: Poppins,serif;
+  font-weight: normal;
+ 
+}
+.symbol {
+color: #40ADF4;
+font-weight: 900;
+font-family: "Times New Roman",Georgia,Quicksand;
+font-style: italic;
+font-size: 1.56rem;      /*setting the default font-size to 25px if rem=16px otherwise for 14px it is 21.84*/
+white-space: normal !important;
+word-wrap: break-word !important;
+}
+.titlewrapper{
+width: 100%;
+text-align:center;
+}
+.category-heading {
+ /* font-family: 'Lato', sans-serif;*/
+ font-family: 'Raleway', sans-serif;
+}
+/*image name*/
+.image-name{
+  color:black;
+  overflow-wrap:break-word;
+  word-break:break-word;
+  font-size: 1.07rem ;    /*16px according to rem=14px*/
+}
+.image-{
+  color:black;
+  overflow-wrap:break-word;
+  word-break:break-word;
+  font-size: 1rem ;    /*14px according to rem=14px*/
+}
+/*Carousel Settings*/
+/*setting margins for carousel*/
+#FacultyCard .carousel{
+  margin: 1.5rem 1.5rem 0;
+} 
+/*carousel arrows*/
+/*.carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: rgba(14, 14, 233, 0.932) no-repeat center center;*/   /*color url position/bg-size bg-repeat bg-origin bg-clip bg-attachment*/
+   /* background-size: 100% 100%;
+  }*/
+ /* .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }*/
+  #FacultyCard .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+   /* display: inline-block;*/
+    width: 100px;
+    height: 100px;
+    outline: black;
+    background-size: 100% 100%;
+   
+   
+    background-image: none;
+  }
+  .carousel-control-next-icon:after{
+    content:'>';
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(131, 131, 131);
+  }
+  .carousel-control-prev-icon:after{
+    content:'<';
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(131, 131, 131);
+  }
+  .carousel-control-prev {
+    position: absolute;
+    top: -12%;
+    margin-left:-1.3rem;
+  }
+  
+  .carousel-control-next {
+    position: absolute;
+    top:-12%;
+    margin-right: -1.3rem;
+  }
+  .carousel-control-prev,.carousel-control-next{
+    width: 2.5%;
+    justify-content: center;
+  }
+                   /*for screen size greater than 1200px large desktops*/
+@media (min-width: 1200px)
+{
+
+/*Adding margin*/
+  #teampageblock {
+        /*margin-left:0px !important;*/
+        margin-left: 5.333333% !important;
+    }
+/*Experimenting with panel body padding*/
+    /*html body .tab-content .panel-body {
+      padding-top:2rem;
+      padding-bottom: 0;
+      padding-left: 5rem;
+      padding-right: 5rem;
+     }*/
+     
+     
+} 
+ 
+
+                    /*for large screen devices*/
+@media (min-width: 992px) and (max-width: 1200px)
+{
+  .col-lg-11 {
+    flex: 0 0 91.666667%;
+    max-width: 100%; 
+    }
+}
+
+@media (min-width: 992px){
+  /*for almost equal margins*/
+  .col-lg-11 {
+    flex: 0 0 91.666667%;
+    /*max-width: 100%;*/ 
+    }
+    /*page heading set to 40px*/
+  .page-heading {
+    font-size: 2.85rem
+  }
+  
+  html body .content .content-wrapper{
+    padding: 0;
+  }
+}
+                    /*for medium screen devices*/
+/*@media (min-width: 769px) and (max-width: 992px){
+
+}
+@media (min-width: 577px) and (max-width: 768px){
+
+}
+@media (min-width: 320px) and (max-width: 576px){
+
+}*/
+
+
+                     /*for small screen devices*/
+/*reducing panel padding*/  
+@media (max-width: 768px){
+  #FacultyCard .carousel{
+    margin: 1rem 1.5rem 0;
+  } 
+  /*Making the arrows larger*/
+  /*#FacultyCard .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: inline-block;
+    width: 3.57rem;
+    height: 3.57rem;
+    background: rgba(14, 14, 233, 0.932) no-repeat center center;  
+    background-size: 100% 100%;
+  }
+    }*/
+/*tabs collapse*/
+@media (max-width: 640px){
+  #tabBlock{
+    display: block;
+  }
+}   
+
+                    /*for very small devices*/
+
+
+@media (max-width: 600px){
+  /*ajusting font size*/
+  .symbol{
+    font-size: 1.25rem;
+  }
+ /* .page-heading {
+    font-size: 5vw;    
+  }*/
+  
+}
+
+                  /*for mobile phones*/
+
+
