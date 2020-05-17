@@ -21,23 +21,7 @@
     list-style: none;
   }
   
-  /*.carousel-indicators li {
-    position: relative;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    width: 30px;
-    height: 3px;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: rgb(8, 0, 0);
-  }*/
   .carousel-indicators li {
-   /* width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    background-color: black;*/
     border: 2px solid #000080;
     background-color: #FFFFFF;
     height: 100px;
@@ -74,7 +58,7 @@
     border-radius: 0.75rem !important;
     border-width: 2px;
   }
-  
+/*nav tabs hover*/ 
   .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   
         background: #fff;
@@ -116,24 +100,6 @@ overflow: hidden;
 padding: 0px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-
-.adjust-width {
-    /*width: 98%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: 30px;
-    margin-left: 30px;*/
-    padding: 100px;
-}
-
-
-/*For spacing of photos*/
-/*.panel-body{
-  padding-top: 28px;
-  padding-left: 100px;
-  padding-right: 100px;
-}*/
 /*Card integration changes with higher selectivity*/
 #FacultyCard .card {
   border-radius: 0;
@@ -187,18 +153,18 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 4vw ;
   font-weight: bold;
 }
-.figureClass figcaption .photo-heading h6{
-  /*font-family: 'Rubik', sans-serif;
-  text-align:center;*/
+/*.figureClass figcaption .photo-heading h6{
+  
   font-family: Poppins,serif;
   font-weight: normal;
  
-}
+}*/
 .symbol {
-color: #40ADF4;
+color:black;
 font-weight: 900;
-font-family: "Times New Roman",Georgia,Quicksand;
-font-style: italic;
+/*font-family: "Times New Roman",Georgia,Quicksand;*/
+font-family: 'Open Sans';
+font-style: normal;
 font-size: 1.56rem;      /*setting the default font-size to 25px if rem=16px otherwise for 14px it is 21.84*/
 white-space: normal !important;
 word-wrap: break-word !important;
@@ -216,35 +182,25 @@ text-align:center;
   color:black;
   overflow-wrap:break-word;
   word-break:break-word;
-  font-size: 1.07rem ;    /*16px according to rem=14px*/
+ /* font-size: 1.07rem ;*/    /*16px according to rem=14px*/
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: normal;
 }
-.image-{
+.image-description{
   color:black;
   overflow-wrap:break-word;
   word-break:break-word;
-  font-size: 1rem ;    /*14px according to rem=14px*/
+  /*font-size: 1rem ; */   /*14px according to rem=14px*/
+  font-size: 14px;
+  font-family: 'Open Sans';
+  font-weight: normal;
 }
 /*Carousel Settings*/
 /*setting margins for carousel*/
 #FacultyCard .carousel{
   margin: 1.5rem 1.5rem 0;
 } 
-/*carousel arrows*/
-/*.carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: rgba(14, 14, 233, 0.932) no-repeat center center;*/   /*color url position/bg-size bg-repeat bg-origin bg-clip bg-attachment*/
-   /* background-size: 100% 100%;
-  }*/
- /* .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-  }
-  
-  .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-  }*/
   #FacultyCard .carousel-control-prev-icon,
   .carousel-control-next-icon {
    /* display: inline-block;*/
@@ -283,6 +239,11 @@ text-align:center;
     width: 2.5%;
     justify-content: center;
   }
+
+  /*card header hover*/
+  .tab-content .card .card-header .btn-link:hover{
+    color: black;
+  }
                    /*for screen size greater than 1200px large desktops*/
 @media (min-width: 1200px)
 {
@@ -290,7 +251,7 @@ text-align:center;
 /*Adding margin*/
   #teampageblock {
         /*margin-left:0px !important;*/
-        margin-left: 5.333333% !important;
+        margin-left: 5.33% !important;
     }
 /*Experimenting with panel body padding*/
     /*html body .tab-content .panel-body {
@@ -346,16 +307,7 @@ text-align:center;
   #FacultyCard .carousel{
     margin: 1rem 1.5rem 0;
   } 
-  /*Making the arrows larger*/
-  /*#FacultyCard .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    display: inline-block;
-    width: 3.57rem;
-    height: 3.57rem;
-    background: rgba(14, 14, 233, 0.932) no-repeat center center;  
-    background-size: 100% 100%;
-  }
-    }*/
+    }
 /*tabs collapse*/
 @media (max-width: 640px){
   #tabBlock{
@@ -379,4 +331,38 @@ text-align:center;
 
                   /*for mobile phones*/
 
+
+@media (max-width: 576px){
+  /*for full screen display*/
+  html body .content .content-wrapper{
+    padding: 0;
+  }
+  .col-12,.col-sm-12{
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .col-6{
+    padding: 0px 8px;
+  }
+  #tabBlock{
+    padding: 0;
+    margin-left: 0;
+    margin-right:0;
+    font-size: 16px;
+  }
+  .page-heading{
+    font-size: 4.5vw;
+  }
+  .container-fluid{
+    padding: 0;
+  }
+
+  
+}
+
+/*@media (max-width: 420px){
+  .page-heading{
+    font-size: 20px;
+  }
+}*/
 
