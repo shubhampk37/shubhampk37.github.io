@@ -316,10 +316,20 @@ text-align:center;
                      /*for small screen devices*/
 /*reducing panel padding*/  
 @media (max-width: 768px){
+  .col-12,.col-sm-12{
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .container-fluid{
+    padding: 0;
+  }
+html body .content .content-wrapper {
+    padding: 0rem;
+}
   #FacultyCard .carousel{
     margin: 1rem 1.5rem 0;
   } 
-    }
+    
 /*tabs collapse*/
 @media (max-width: 640px){
   #tabBlock{
@@ -366,10 +376,6 @@ text-align:center;
    /* grid-auto-rows: 215px;*/
    grid-gap: 0px;
   }
-  /*for full screen display*/
-  html body .content .content-wrapper{
-    padding: 0;
-  }
   .col-12,.col-sm-12{
     padding-left: 0rem;
     padding-right: 0rem;
@@ -386,10 +392,6 @@ text-align:center;
   .page-heading{
     font-size: 4.5vw;
   }
-  .container-fluid{
-    padding: 0;
-  }
-
   
 }
 
