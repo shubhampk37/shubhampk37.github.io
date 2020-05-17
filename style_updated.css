@@ -244,7 +244,19 @@ text-align:center;
   .tab-content .card .card-header .btn-link:hover{
     color: black;
   }
-                   /*for screen size greater than 1200px large desktops*/
+
+
+
+  /*CSS GRID*/
+  .cg-row{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(165px,1fr));
+   /* grid-auto-rows: 215px;*/
+    grid-gap: 15px;
+  }
+  /*for screen size greater than 1200px large desktops*/
 @media (min-width: 1200px)
 {
 
@@ -333,6 +345,27 @@ text-align:center;
 
 
 @media (max-width: 576px){
+  /*adjusting arrows*/
+  .carousel-control-prev {
+    position: absolute;
+    top: -12%;
+    margin-left:-0.9rem;
+  }
+  
+  .carousel-control-next {
+    position: absolute;
+    top:-12%;
+    margin-right: -0.9rem;
+  }
+  /*allowing name to go to the next line on small devices*/
+  .cg-row{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+   /* grid-auto-rows: 215px;*/
+   grid-gap: 0px;
+  }
   /*for full screen display*/
   html body .content .content-wrapper{
     padding: 0;
