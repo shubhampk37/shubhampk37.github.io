@@ -101,14 +101,11 @@ padding: 0px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*Card integration changes with higher selectivity*/
-#FacultyCard .card {
+.card {
   border-radius: 0;
   margin: 0;
   max-width: 100%;
-  border:0 !important;
-}
-.card {
-  border: none !important;
+  border:none !important;
 }
 .card-body {
   -ms-flex: 1 1 auto;
@@ -118,7 +115,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*Card integration in environment this is from ongoing*/
 
-#FacultyCard .card-header {
+.tab-content .card-header {
   color: black;
   padding: .75rem 1.25rem;
   margin-bottom: 0;
@@ -127,13 +124,8 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   word-wrap: break-word;
   height:auto;
 }
-#FacultyCard .card-header:hover {
+.card-header:hover {
   background-color: rgba(0,0,0,.3);
-}
-/*wrapping overflowing text*/
-#FacultyCard .tab-content button .cover{
-  white-space: normal !important;
-  word-wrap: break-word !important;
 }
 /*figure tag class*/
 .figureClass{
@@ -155,7 +147,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-weight: bold;
 }
 
-.symbol {
+.category-heading {
 padding: 6px 12px;
 font-weight: normal;
 font-family: 'Open Sans';
@@ -186,10 +178,10 @@ word-wrap: break-word !important;
 }
 /*Carousel Settings*/
 /*setting margins for carousel*/
-#FacultyCard .carousel{
+.carousel{
   margin: 1.5rem 1.5rem 0;
 } 
-  #FacultyCard .carousel-control-prev-icon,
+ .carousel-control-prev-icon,
   .carousel-control-next-icon {
    
     width: 100px;
@@ -306,7 +298,7 @@ word-wrap: break-word !important;
 html body .content .content-wrapper {
     padding: 0rem;
 }
-  #FacultyCard .carousel{
+  .carousel{
     margin: 1rem 1.5rem 0;
   } 
 }
