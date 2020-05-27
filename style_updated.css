@@ -128,7 +128,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height:auto;
 }
 #FacultyCard .card-header:hover {
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0,0,0,.3);
 }
 /*wrapping overflowing text*/
 #FacultyCard .tab-content button .cover{
@@ -157,7 +157,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 .symbol {
 padding: 6px 12px;
-font-weight: lighter;
+font-weight: normal;
 font-family: 'Open Sans';
 font-style: normal;
 font-size: 1.25rem;      /*setting the default font-size to 25px if rem=16px otherwise for 14px it is 21.84*/
@@ -253,16 +253,7 @@ word-wrap: break-word !important;
   #teampageblock {
         /*margin-left:0px !important;*/
         margin-left: 5.33% !important;
-    }
-/*Experimenting with panel body padding*/
-    /*html body .tab-content .panel-body {
-      padding-top:2rem;
-      padding-bottom: 0;
-      padding-left: 5rem;
-      padding-right: 5rem;
-     }*/
-     
-     
+    }     
 } 
  
 
@@ -384,7 +375,7 @@ html body .content .content-wrapper {
     font-size: 16px;
   }
   .page-heading{
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
   
 }
