@@ -364,9 +364,7 @@ html body .content .content-wrapper {
     grid-auto-rows: 1fr;
     grid-gap: 10px;
   }
-  #junior-mentors-slide-2{
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-  }
+
   #Faculty-slide{
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
   }
