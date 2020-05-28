@@ -152,7 +152,7 @@ padding: 6px 12px;
 font-weight: normal;
 font-family: 'Open Sans';
 font-style: normal;
-font-size: 1.25rem;      /*setting the default font-size to 25px if rem=16px otherwise for 14px it is 21.84*/
+font-size: 1.25rem;      
 white-space: normal !important;
 word-wrap: break-word !important;
 }
@@ -162,7 +162,6 @@ word-wrap: break-word !important;
   color:black;
   overflow-wrap:break-word;
   word-break:break-word;
- /* font-size: 1.07rem ;*/    /*16px according to rem=14px*/
   font-size: 16px;
   font-family: Poppins;
   font-weight: normal;
@@ -171,7 +170,6 @@ word-wrap: break-word !important;
   color:black;
   overflow-wrap:break-word;
   word-break:break-word;
-  /*font-size: 1rem ; */   /*14px according to rem=14px*/
   font-size: 14px;
   font-family: 'Open Sans';
   font-weight: normal;
@@ -237,6 +235,11 @@ word-wrap: break-word !important;
    /* grid-auto-rows: 215px;*/
     grid-gap: 15px;
   }
+
+#junior-mentors-slide-2{
+  grid-template-columns: repeat(auto-fit,185px);
+}                                                                    
+
   /*for screen size greater than 1200px large desktops*/
 @media (min-width: 1200px)
 {
@@ -350,8 +353,11 @@ html body .content .content-wrapper {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-   
+  
    grid-gap: 10px;
+  }
+  #junior-mentors-slide-2{
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
   }
   .col-12,.col-sm-12{
     padding-left: 0rem;
