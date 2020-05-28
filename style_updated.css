@@ -357,14 +357,18 @@ html body .content .content-wrapper {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-  
-   grid-gap: 10px;
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
   }
   #junior-mentors-slide-2{
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
   }
   #Faculty-slide{
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  }
+  #Senior-mentors-slide{
+    grid-template-rows: 217px;
+    grid-auto-rows: 217px;
   }
   .col-12,.col-sm-12{
     padding-left: 0rem;
