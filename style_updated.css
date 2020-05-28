@@ -238,6 +238,9 @@ word-wrap: break-word !important;
 
 #junior-mentors-slide-2{
   grid-template-columns: repeat(auto-fit,185px);
+} 
+#Faculty-slide{
+  grid-template-columns: repeat(auto-fit,minmax(185px,1fr));
 }                                                                    
 
   /*for screen size greater than 1200px large desktops*/
@@ -348,6 +351,7 @@ html body .content .content-wrapper {
     justify-content: center;
   }
   /*allowing name to go to the next line on small devices*/
+  /*grid changes*/
   .cg-row{
     width: 100%;
     display: grid;
@@ -357,6 +361,9 @@ html body .content .content-wrapper {
    grid-gap: 10px;
   }
   #junior-mentors-slide-2{
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  }
+  #Faculty-slide{
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
   }
   .col-12,.col-sm-12{
