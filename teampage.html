@@ -61,17 +61,17 @@ data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
                                 <ul class="h5  nav nav-pills nav-fill  mb-5" id="tabBlock">
                                 
                                     <li class="nav-item">
-                                        <a href="#FacultyCard" class="nav-link  active  px-4" data-toggle="tab">Faculty Leaders</a>
+                                        <a href="#FacultyCard" id="FacultyTab" class="nav-link  active  px-4" data-toggle="tab">Faculty Leaders</a>
                                     </li>
                                 
                                 
                                     <li class="nav-item">
-                                        <a href="#StudentCard" class="nav-link px-4" data-toggle="tab">Student Leaders</a>
+                                        <a href="#StudentCard" id="StudentTab" class="nav-link px-4" data-toggle="tab">Student Leaders</a>
                                     </li>
                                 
                                 
                                     <li class="nav-item">
-                                        <a href="#Organization" class="nav-link px-4" data-toggle="tab">Core Team</a>
+                                        <a href="#Organization" id="OrganizationTab" class="nav-link px-4" data-toggle="tab">Core Team</a>
                                     </li>
                                         
                                 </ul>
@@ -85,7 +85,7 @@ data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
                                             <div id="Faculty-Collapse-Category-1"  class="collapse show" aria-labelledby="Faculty-Category-Heading-1" >
                                             <div class="card-body">
                                                     <div class="panel-body">
-                                                        <div id="Faculty-Category-1" class="carousel slide customDiv"   data-interval="false" >
+                                                        <div id="Faculty-Category-1" class="carousel slide customDiv"   data-interval="false" data-interval="false">
                                                             <!-- The slideshow -->
                                                             
                                                             <div class="carousel-inner">
@@ -293,7 +293,7 @@ data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
                                                     <div id="Student-Collapse-Category-1-sub-category-1"  class="collapse show" aria-labelledby="Student-Category-1-sub-category-Heading-1">
                                                         <div class="card-body">
                                                             <div class="panel-body">
-                                                                <div id="Student-Category-1-sub-category-1" class="carousel slide carousel-fade customDiv" data-pause="false"  data-ride="carousel" data-interval="8000" >
+                                                                <div id="Student-Category-1-sub-category-1" class="carousel slide carousel-fade customDiv" data-pause="false"   data-interval="8000" >
                                                                     <a class="carousel-control-prev" style="z-index:10;" href="#Student-Category-1-sub-category-1" data-slide="prev">
                                                                         <span class="carousel-control-prev-icon"  aria-hidden="true"></span> 
                                                                     </a>
@@ -613,7 +613,7 @@ data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
                                                     <div id="Student-Collapse-Category-1-sub-category-2"  class="collapse show" aria-labelledby="Student-Category-1-sub-category-Heading-2">
                                                         <div class="card-body">
                                                             <div class="panel-body">
-                                                                <div id="Student-Category-1-sub-category-2" class="carousel slide carousel-fade customDiv" data-pause="false"  data-ride="carousel" data-interval="8000" >
+                                                                <div id="Student-Category-1-sub-category-2" class="carousel slide carousel-fade customDiv" data-pause="false"  data-interval="8000" >
                                                                     <a class="carousel-control-prev" style="z-index:10;" href="#Student-Category-1-sub-category-2" data-slide="prev">
                                                                         <span class="carousel-control-prev-icon"  aria-hidden="true"></span> 
                                                                     </a>
@@ -2762,7 +2762,7 @@ data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
                                                     <div id="Student-Collapse-Category-3-sub-category-2"  class="collapse show" aria-labelledby="Student-Category-3-sub-category-Heading-2">
                                                         <div class="card-body">
                                                             <div class="panel-body">
-                                                                <div id="Student-Category-3-sub-category-2" class="carousel slide carousel-fade customDiv" data-pause="false"  data-ride="carousel" data-interval="8000" >
+                                                                <div id="Student-Category-3-sub-category-2" class="carousel slide carousel-fade customDiv" data-pause="false"  data-interval="8000" >
                                                                     <a class="carousel-control-prev" style="z-index:10;" href="#Student-Category-3-sub-category-2" data-slide="prev">
                                                                         <span class="carousel-control-prev-icon"  aria-hidden="true"></span> 
                                                                     </a>
@@ -3398,7 +3398,7 @@ data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
                                                     <div id="Student-Collapse-Category-3-sub-category-5"  class="collapse show" aria-labelledby="Student-Category-3-sub-category-Heading-5">
                                                         <div class="card-body">
                                                             <div class="panel-body">
-                                                                <div id="Student-Category-3-sub-category-5" class="carousel slide carousel-fade customDiv" data-pause="false"  data-ride="carousel" data-interval="8000" >
+                                                                <div id="Student-Category-3-sub-category-5" class="carousel slide carousel-fade customDiv" data-pause="false"  data-interval="8000" >
                                                                     <a class="carousel-control-prev" style="z-index:10;" href="#Student-Category-3-sub-category-5" data-slide="prev">
                                                                         <span class="carousel-control-prev-icon"  aria-hidden="true"></span> 
                                                                     </a>
@@ -3984,8 +3984,8 @@ data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
     </script>
 <script type="text/javascript">
 $(document).ready(function(){
-    $('#StudentCard').click(function(){
-        $('.carousel').carousel(0);
+    $('#StudentTab').click(function(){
+        $('#StudentCard .carousel').carousel(0);
     });
 });
 </script>
