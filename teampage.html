@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,500,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <title>Virtual Labs Team Page</title>
 
@@ -1108,7 +1108,7 @@ data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
                                                                                     
                                                                                     </figure>
                                                                                 </div>
-                                                                                <div class="image30" >
+                                                                                <div class="image50" >
                                                                                     <figure class="effect-lily figureClass">
                                                                                     <a   class="thumbnail" data-size="480x360"  alt="1 slide">
                                                                                         <img class="lazy img-fluid image-style rounded" data-src="assets/images/student-mentors/Jaydev_Bapat.jpg" src="assets/images/placeholder/placeholder1.png" alt="Jaydev Bapat">
@@ -4566,28 +4566,28 @@ $(document).ready(function(){
 });
 $(window).bind('scroll', function() {
     //4th slider
-    if($(window).scrollTop() >= $('#Student-Category-3-sub-category-Heading-5').offset().top + $('#Student-Category-3-sub-category-5').outerHeight(true) || $(window).scrollTop() <= $('#Student-Category-3-sub-category-Heading-5').offset().top-30 ){
+    if($(window).scrollTop() >= $('#Student-Category-3-sub-category-Heading-5').offset().top + $('#Student-Category-3-sub-category-5').outerHeight(true) || $(window).scrollTop() <= $('#Student-Category-3-sub-category-Heading-5').offset().top-50 ){
         $('#Student-Category-3-sub-category-5').carousel("pause");
         console.log("pause 4");
     }
-    else if($(window).scrollTop() >= $('#Student-Category-3-sub-category-Heading-5').offset().top-30) {
+    else if($(window).scrollTop() >= $('#Student-Category-3-sub-category-Heading-5').offset().top-50) {
         $('#Student-Category-3-sub-category-5').carousel("cycle");
     }
     //3rd slider
-    if( $(window).scrollTop() >= $('#Student-Category-3-sub-category-Heading-2').offset().top + $('#Student-Category-3-sub-category-2').outerHeight(true) || $(window).scrollTop() <= $('#Student-Category-3-sub-category-Heading-2').offset().top-30 ){
+    if( $(window).scrollTop() >= $('#Student-Category-3-sub-category-Heading-2').offset().top + $('#Student-Category-3-sub-category-2').outerHeight(true) || $(window).scrollTop() <= $('#Student-Category-3-sub-category-Heading-2').offset().top-50 ){
         $('#Student-Category-3-sub-category-2').carousel("pause");
         console.log("pause 3");
     }
-    else if($(window).scrollTop() >= $('#Student-Category-3-sub-category-Heading-2').offset().top-30) {
+    else if($(window).scrollTop() >= $('#Student-Category-3-sub-category-Heading-2').offset().top-50) {
         $('#Student-Category-3-sub-category-2').carousel("cycle");
         console.log("slide 3"+ "position  " + $('#Student-Category-3-sub-category-Heading-2').offset().top);
     }
     //2nd slider
-    if( $(window).scrollTop() >= $('#Student-Category-1-sub-category-Heading-2').offset().top + $('#Student-Category-1-sub-category-2').outerHeight(true) || $(window).scrollTop() <= $('#Student-Category-1-sub-category-Heading-2').offset().top-30 ){
+    if( $(window).scrollTop() >= $('#Student-Category-1-sub-category-Heading-2').offset().top + $('#Student-Category-1-sub-category-2').outerHeight(true) || $(window).scrollTop() <= $('#Student-Category-1-sub-category-Heading-2').offset().top-50 ){
         $('#Student-Category-1-sub-category-2').carousel("pause");
         console.log("pause 2");
     }
-    else if($(window).scrollTop() >= $('#Student-Category-1-sub-category-Heading-2').offset().top-30) {
+    else if($(window).scrollTop() >= $('#Student-Category-1-sub-category-Heading-2').offset().top-50) {
         $('#Student-Category-1-sub-category-2').carousel("cycle");
     }
     //1st slider
