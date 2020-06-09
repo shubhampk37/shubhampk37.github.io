@@ -193,12 +193,6 @@ word-wrap: break-word !important;
   .carousel-control-prev-icon{
     background-image: url("assets/arrows/back.png");
   }
- /* .carousel-control-prev-icon:after{
-    content:'<';
-    font-size: 50px;
-    font-weight: 900;
-    color: rgb(131, 131, 131);
-  }*/
   .carousel-control-prev {
     position: absolute;
     top: -12%;
@@ -235,10 +229,6 @@ word-wrap: break-word !important;
     grid-auto-rows: 1fr;
     grid-gap: 15px;
   }
-
-/*#junior-mentors-slide-2{
-  grid-template-columns: repeat(auto-fit,minmax(185px,1fr));
-} */
 #Faculty-slide{
   grid-template-columns: repeat(auto-fit,minmax(185px,1fr));
 }                                        
@@ -251,32 +241,57 @@ word-wrap: break-word !important;
   grid-gap: 20px;
 }                       
 
+
+@media (min-width: 1440px){
+  .cg-row{
+    position: relative;
+    grid-template-rows: 217px;
+    grid-template-columns: repeat(6,180px);
+    
+    grid-gap: 25px;
+  }
+  #Fixed-height-photo-grid{
+    justify-content: center;
+  }
+  .carousel-control-prev {
+    margin-left: 5rem;
+  }
+  .carousel-control-next {
+    margin-right: 5rem;
+  }
+  /*.Category-1-sub-category-1{
+    width: 1260px;
+  }*/
+  #teampageblock {
+    margin: 5.33% 0 !important;
+    
+}   
+}
+
   /*for screen size greater than 1200px large desktops*/
 @media (min-width: 1200px)
 {
 
 /*Adding margin*/
   #teampageblock {
-        /*margin-left:0px !important;*/
         margin-left: 5.33% !important;
     }     
 } 
  
 
                     /*for large screen devices*/
-@media (min-width: 992px) and (max-width: 1200px)
+/*@media (min-width: 992px) and (max-width: 1200px)
 {
   .col-lg-11 {
     flex: 0 0 91.666667%;
     max-width: 100%; 
     }
-}
+}*/
 
 @media (min-width: 992px){
   /*for almost equal margins*/
   .col-lg-11 {
     flex: 0 0 91.666667%;
-    /*max-width: 100%;*/ 
     }
     /*page heading set to 40px*/
   .page-heading {
@@ -357,8 +372,6 @@ html body .content .content-wrapper {
   /*allowing name to go to the next line on small devices*/
   /*grid changes*/
   .cg-row{
-    width: 100%;
-    display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     grid-auto-rows: 1fr;
