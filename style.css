@@ -254,10 +254,10 @@ word-wrap: break-word !important;
     justify-content: center;
   }
   .carousel-control-prev {
-    margin-left: 5rem;
+    margin-left: 2rem;
   }
   .carousel-control-next {
-    margin-right: 5rem;
+    margin-right: 2rem;
   }
   /*.Category-1-sub-category-1{
     width: 1260px;
