@@ -276,7 +276,15 @@ word-wrap: break-word !important;
     
 }   
 }
-
+@media (min-width: 1900px)
+{
+  .carousel-control-prev {
+    margin-left: 5.5vw;
+  }
+  .carousel-control-next {
+    margin-right: 5.5vw;
+  }
+}
   /*for screen size greater than 1200px large desktops*/
 @media (min-width: 1200px)
 {
