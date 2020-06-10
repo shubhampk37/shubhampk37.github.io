@@ -268,13 +268,7 @@ word-wrap: break-word !important;
   .carousel-control-next {
     margin-right: 2vw;
   }
-  /*.Category-1-sub-category-1{
-    width: 1260px;
-  }*/
-  #teampageblock {
-    margin: 5.33% 0 !important;
-    
-}   
+   
 }
 @media (min-width: 1900px)
 {
@@ -283,6 +277,33 @@ word-wrap: break-word !important;
   }
   .carousel-control-next {
     margin-right: 5.5vw;
+  }
+}
+/*For screen greater than */
+@media (min-width: 2500px){
+  .cg-row{
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit,165px);
+    grid-auto-rows: 1fr;
+    grid-gap: 15px;
+   /* justify-content: center;*/
+  }
+  #Fixed-height-photo-grid{
+    justify-content: normal;
+  }
+  #Fixed-width-photo-grid{
+    grid-template-columns: repeat(6,165px);
+    grid-gap: 15px;
+    justify-content: normal;
+  }  
+  #Student-Category-1-sub-category-1 .carousel-inner .carousel-item .cg-row,#Student-Category-1-sub-category-2 .carousel-inner .carousel-item .cg-row,#Student-Category-3-sub-category-2 .carousel-inner .carousel-item .cg-row,#Student-Category-3-sub-category-5 .carousel-inner .carousel-item .cg-row{
+    justify-content: center;
+  }
+  .carousel-control-prev {
+    margin-left: -2rem ;
+  }
+  .carousel-control-next {
+    margin-right: -2rem ;
   }
 }
   /*for screen size greater than 1200px large desktops*/
