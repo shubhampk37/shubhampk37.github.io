@@ -246,7 +246,7 @@ word-wrap: break-word !important;
 }                
 
 
-@media (min-width: 1440px){
+@media (min-width: 1450px){
   .cg-row{
     position: relative;
     grid-template-rows: 217px;
@@ -263,10 +263,10 @@ word-wrap: break-word !important;
     grid-gap: 25px;
   }  
   .carousel-control-prev {
-    margin-left: 2rem;
+    margin-left: 2vw;
   }
   .carousel-control-next {
-    margin-right: 2rem;
+    margin-right: 2vw;
   }
   /*.Category-1-sub-category-1{
     width: 1260px;
