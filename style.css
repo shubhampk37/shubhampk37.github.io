@@ -219,6 +219,11 @@ word-wrap: break-word !important;
     text-decoration: none;
   }
 
+  /*Adding margin to the main block*/
+  #teampageblock {
+    margin-left: auto;
+    margin-right: auto;
+ }   
 
   /*CSS GRID*/
   .cg-row{
@@ -307,13 +312,11 @@ word-wrap: break-word !important;
   }
 }
   /*for screen size greater than 1200px large desktops*/
-@media (min-width: 1200px)
-{
-
-/*Adding margin*/
-  #teampageblock {
-        margin-left: 5.33% !important;
-    }     
+@media (min-width: 1081px) and (max-width: 1280px){
+  .container-fluid {
+    width: 960px;
+  } 
+  
 } 
  
 
